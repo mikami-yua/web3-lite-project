@@ -75,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ContractStruture.sol": "ContractStructure"
+			"contracts/1_ContractStruture.sol": "ContractStructure"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -89,7 +89,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ContractStruture.sol": {
+		"contracts/1_ContractStruture.sol": {
 			"keccak256": "0xebd4662c301c71701637b110933a2a443e0949eca86a51c513c0502c8571d1cd",
 			"license": "MIT",
 			"urls": [
