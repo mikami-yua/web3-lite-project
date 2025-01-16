@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "testStringAndBytes",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/7_BytesAndString.sol": "BytesAndString"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/7_BytesAndString.sol": {
+			"keccak256": "0x8894acc85870b163d69e4d0c3e4a2e88f87633f7c22270a0899c90e2a6a1ebc0",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://235ca9a92350fa57e0468beb9b6e6f92f4b0037d9ebc7a9bbe069b1e85282c76",
+				"dweb:/ipfs/QmdwuKe6Tba5ZiQGcNvYHa2zdf92vn32YCpE7XMCerxs5v"
+			]
+		}
+	},
+	"version": 1
+}
