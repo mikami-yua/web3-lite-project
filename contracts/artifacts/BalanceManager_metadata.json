@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.21+commit.d9974bed"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
@@ -36,12 +36,46 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "src",
-						"type": "address"
-					},
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "address",
 						"name": "dst",
@@ -74,7 +108,7 @@
 		"compilationTarget": {
 			"contracts/9_BalanceManager.sol": "BalanceManager"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -87,11 +121,11 @@
 	},
 	"sources": {
 		"contracts/9_BalanceManager.sol": {
-			"keccak256": "0xb8e94bce9d92fe51851feb00c868fef62104ac76d2521f32d421dd14b1f30a80",
+			"keccak256": "0x87883c8b808a300b03ac080b62b8979a030b956dda9d00b83474907abcfbc85a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://65a2dd4c3a9c701fd4d36103210a9f0954729fcc41b831e6cf2cd8d555052daf",
-				"dweb:/ipfs/QmWZdS9ntdkjqHArbjYgHZNdGJgf52VQiomjAoh8ZFQMZC"
+				"bzz-raw://b32a8781d94c428c5ff5f8afd0ae187f4f92b1ec1557b571f8acc8a3b5dbdd99",
+				"dweb:/ipfs/QmXdEzHUyvvz7MVgcejYaa2owjUum2x4KTTkmFF1BS3fmu"
 			]
 		}
 	},
