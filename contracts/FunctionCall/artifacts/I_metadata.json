@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FunctionCall/interfaceCallee.sol": "I"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FunctionCall/interfaceCallee.sol": {
+			"keccak256": "0x88071763514d7d77cf6515c020f7f92a6280fa02f8c58014e04882c2abf0a678",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://34c5ff548a83657ff41d3dd51e19d028d2e7b36ff1bbab1d00a85a222fdc3164",
+				"dweb:/ipfs/Qmdc8CjNyVwrs69vT3LXSxh6J9ybQ65B84K689q1gQz9UC"
+			]
+		}
+	},
+	"version": 1
+}

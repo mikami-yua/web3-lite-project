@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FunctionCall/IERC20.sol": "IERC20"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FunctionCall/IERC20.sol": {
+			"keccak256": "0x05ccedb479f6e35db4461a158135fddb492b360ea9d9b2ddcff10e9b9d2f275e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://62c6a8d6f98a479d46680daa3add0933b8fd04a129df347d58ccb91752e8b2a2",
+				"dweb:/ipfs/QmQUAPXZEB9sdZoNH6ewFntF2VuSGVFqXXoxYZXEkXFAjs"
+			]
+		}
+	},
+	"version": 1
+}
