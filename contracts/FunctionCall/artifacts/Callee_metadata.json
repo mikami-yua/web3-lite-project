@@ -6,6 +6,32 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "caller",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "eoaAddr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -45,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FunctionCall/callee.sol": "Callee"
+			"contracts/FunctionCall/functionCallSameFile.sol": "Callee"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -59,20 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FunctionCall/callee.sol": {
-			"keccak256": "0xc7c6f3e1597a453c11767a2524784ff1cca995de04dc122808a5a35bc8f1c577",
+		"contracts/FunctionCall/functionCallSameFile.sol": {
+			"keccak256": "0xaf555eb7d75a0e261f158c65470c8c3e6cfeb691db05c71bd3d3281faff8adba",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://787625b74c94dafe6d124198b2311db394462d3c24c1b1bd64ef3377b9617b6e",
-				"dweb:/ipfs/QmVP7VuNdpUEnVnkN4XKbgZGVEGSNDteQ2NVCUgzq1ZJox"
-			]
-		},
-		"contracts/FunctionCall/interfaceCallee.sol": {
-			"keccak256": "0x59b500ea0fd2e94ee7c230cb6571e272b55aac241e4c5ebc28dbdea20637469f",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://722df9166512027d8fb56bd95133e54a88416bab5ed5b445161ab068a45755ec",
-				"dweb:/ipfs/QmPMJ6YidpT47yC93VEcqzYkSxTEUjTeMqCJgPaojx1md1"
+				"bzz-raw://c4d89450314cc5ef2b2c60ddc389a5f560ca2bde23740aa77cd3bc2d992e99b7",
+				"dweb:/ipfs/QmVwzfuc4FZZ1EUoLN1dS91YAAUnnutADxYuGdNhoEaLmC"
 			]
 		}
 	},
