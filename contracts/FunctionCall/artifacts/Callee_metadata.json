@@ -6,30 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "caller",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "eoaAddr",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"stateMutability": "nonpayable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [
@@ -40,7 +18,13 @@
 					}
 				],
 				"name": "setX",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -71,7 +55,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FunctionCall/functionCallSameFile.sol": "Callee"
+			"contracts/FunctionCall/callee.sol": "Callee"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -85,12 +69,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FunctionCall/functionCallSameFile.sol": {
-			"keccak256": "0xaf555eb7d75a0e261f158c65470c8c3e6cfeb691db05c71bd3d3281faff8adba",
+		"contracts/FunctionCall/callee.sol": {
+			"keccak256": "0xcc21dfb7614d7eebae68efec1743421217afb0c2b32f54b41d17e579e5682e3a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c4d89450314cc5ef2b2c60ddc389a5f560ca2bde23740aa77cd3bc2d992e99b7",
-				"dweb:/ipfs/QmVwzfuc4FZZ1EUoLN1dS91YAAUnnutADxYuGdNhoEaLmC"
+				"bzz-raw://49d1f93a95ff10eb169fb55ef7285b7cf5e6ace4310a70e95e1b4d6686fd6718",
+				"dweb:/ipfs/QmUDeCBZpBN6awT1kwPJrDtQNDtmdCPdDwvurrGJUBCu6y"
+			]
+		},
+		"contracts/FunctionCall/interfaceCallee.sol": {
+			"keccak256": "0x59b500ea0fd2e94ee7c230cb6571e272b55aac241e4c5ebc28dbdea20637469f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://722df9166512027d8fb56bd95133e54a88416bab5ed5b445161ab068a45755ec",
+				"dweb:/ipfs/QmPMJ6YidpT47yC93VEcqzYkSxTEUjTeMqCJgPaojx1md1"
 			]
 		}
 	},

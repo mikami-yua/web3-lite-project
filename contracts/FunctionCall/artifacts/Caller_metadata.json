@@ -17,32 +17,6 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "caller",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "eoaAddr",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -50,9 +24,22 @@
 						"type": "uint256"
 					}
 				],
-				"name": "setCalleeX",
+				"name": "setCalleeDynamic",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "xx",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -69,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FunctionCall/functionCallSameFile.sol": "Caller"
+			"contracts/FunctionCall/caller.sol": "Caller"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -83,12 +70,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FunctionCall/functionCallSameFile.sol": {
-			"keccak256": "0xaf555eb7d75a0e261f158c65470c8c3e6cfeb691db05c71bd3d3281faff8adba",
+		"contracts/FunctionCall/caller.sol": {
+			"keccak256": "0xd7566ce4078674ad1f73a5684821987d1ea1ef2c5e5c50300ee873e72a03d1a7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c4d89450314cc5ef2b2c60ddc389a5f560ca2bde23740aa77cd3bc2d992e99b7",
-				"dweb:/ipfs/QmVwzfuc4FZZ1EUoLN1dS91YAAUnnutADxYuGdNhoEaLmC"
+				"bzz-raw://370af36c5c1846303a46d85b82513675d1aa995a3bc2e46cdeeff9572643590b",
+				"dweb:/ipfs/QmcLoty1z1154QYftXQv6hQUjajB1c9kMwx8YiyVc6YWth"
 			]
 		}
 	},
