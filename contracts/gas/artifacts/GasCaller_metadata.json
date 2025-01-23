@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gas",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "callForever",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/gas/forever.sol": "GasCaller"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/gas/forever.sol": {
+			"keccak256": "0x93fb9d9d1b7c07443dbc1aaad94dc33d927bb67fb57bfc0972464c39fb7afa80",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0f188c65626c91eacc8042a5880244a499773fdc1b9279eb0287c28998fef7f7",
+				"dweb:/ipfs/QmS4KTsZQabAFYE9fnqzvFMUc2fQdxfdA7F7jbNxyK37Wy"
+			]
+		}
+	},
+	"version": 1
+}
