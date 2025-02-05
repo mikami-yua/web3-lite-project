@@ -1,0 +1,76 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "logic",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "impl",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newLogic",
+						"type": "address"
+					}
+				],
+				"name": "upgradeTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/delegatecall/unstructured-proxy.sol": "UnstructuredProxy"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/delegatecall/unstructured-proxy.sol": {
+			"keccak256": "0x033a7ac139e41186f900a90bcbc10bc1834cf97d40a4579a824330a6223f1a01",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ea1793730cd7ff17e3ba84c12e2b3d2aa0fb480229107ec067850636ef95f009",
+				"dweb:/ipfs/QmPJ861dukeQXADukB1KA9mXAuXDic1PZCWpjnoZHPWyAz"
+			]
+		}
+	},
+	"version": 1
+}

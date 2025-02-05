@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/delegatecall/base-proxy.sol": "Name"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/delegatecall/base-proxy.sol": {
+			"keccak256": "0x1a9f3f763335a476598283124b99ea4c4c12bd5173f264128d9d9cceb1510eda",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://622c4a5919c508620c4a008cbcb412e2d3b64e8781301cada9a55fa7fcd8ee4a",
+				"dweb:/ipfs/QmNxAr66D26jPYsdJH9ES1tWbrjqD5J98mAZ69zu1xQTmX"
+			]
+		}
+	},
+	"version": 1
+}
