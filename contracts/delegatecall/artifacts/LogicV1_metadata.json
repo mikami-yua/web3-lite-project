@@ -24,6 +24,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "placeholder",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -39,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/delegatecall/unstructured-proxy.sol": "LogicV1"
+			"contracts/delegatecall/base-proxy.sol": "LogicV1"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -53,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/delegatecall/unstructured-proxy.sol": {
-			"keccak256": "0x033a7ac139e41186f900a90bcbc10bc1834cf97d40a4579a824330a6223f1a01",
+		"contracts/delegatecall/base-proxy.sol": {
+			"keccak256": "0x0f11732d520e454aea91b0ee9d96a436c320a730a212ba4e57e5509dd3fdbfca",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ea1793730cd7ff17e3ba84c12e2b3d2aa0fb480229107ec067850636ef95f009",
-				"dweb:/ipfs/QmPJ861dukeQXADukB1KA9mXAuXDic1PZCWpjnoZHPWyAz"
+				"bzz-raw://64ca1545150c0daff520875901985b2bb4920c6fe91ae8115c9a811dbf3571c6",
+				"dweb:/ipfs/QmZwz9vrVLQMUGFd31ectkjgbs485RcLqG4imo2C83nZCE"
 			]
 		}
 	},

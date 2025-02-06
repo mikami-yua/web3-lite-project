@@ -6,8 +6,21 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
 				"inputs": [],
-				"name": "inc",
+				"name": "bar",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -26,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/delegatecall/base-proxy.sol": "LogicInterface"
+			"contracts/extend/super.sol": "E"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -40,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/delegatecall/base-proxy.sol": {
-			"keccak256": "0x0f11732d520e454aea91b0ee9d96a436c320a730a212ba4e57e5509dd3fdbfca",
-			"license": "GPL-3.0",
+		"contracts/extend/super.sol": {
+			"keccak256": "0x92949e150b916b7f234e3d962a3d53add22bf59e72694b79fa0ebe2ad870b3d0",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://64ca1545150c0daff520875901985b2bb4920c6fe91ae8115c9a811dbf3571c6",
-				"dweb:/ipfs/QmZwz9vrVLQMUGFd31ectkjgbs485RcLqG4imo2C83nZCE"
+				"bzz-raw://c5bd53596ccf19d0162973f5955ad54bdacbf5d0a3dba64b698dd92ae112957f",
+				"dweb:/ipfs/QmZCcnMRxeu5EDbteQTXJYwVtj1MxaqUGhBAt83o9SUfys"
 			]
 		}
 	},

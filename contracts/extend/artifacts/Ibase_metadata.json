@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "inc",
+				"name": "foo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -26,7 +26,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/delegatecall/base-proxy.sol": "LogicInterface"
+			"contracts/extend/polymorphism.sol": "Ibase"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -40,12 +40,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/delegatecall/base-proxy.sol": {
-			"keccak256": "0x0f11732d520e454aea91b0ee9d96a436c320a730a212ba4e57e5509dd3fdbfca",
+		"contracts/extend/polymorphism.sol": {
+			"keccak256": "0x98e9900746b7be93141de0efa8637d1e35c7b459410710d9fa595a5104a44f39",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://64ca1545150c0daff520875901985b2bb4920c6fe91ae8115c9a811dbf3571c6",
-				"dweb:/ipfs/QmZwz9vrVLQMUGFd31ectkjgbs485RcLqG4imo2C83nZCE"
+				"bzz-raw://857edbf9c26f31dffd52f5f44da51290baa684f740bd1d50af434ea553af7ab7",
+				"dweb:/ipfs/QmRkKVJggKXJ3SrRWv3WGDsk8yW8BN2jnDku5JHJN2rxQE"
 			]
 		}
 	},

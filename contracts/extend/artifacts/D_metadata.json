@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "inc",
+				"name": "foo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -26,7 +26,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/delegatecall/base-proxy.sol": "LogicInterface"
+			"contracts/extend/override.sol": "D"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -40,12 +40,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/delegatecall/base-proxy.sol": {
-			"keccak256": "0x0f11732d520e454aea91b0ee9d96a436c320a730a212ba4e57e5509dd3fdbfca",
-			"license": "GPL-3.0",
+		"contracts/extend/override.sol": {
+			"keccak256": "0xb027283a02f1227ef0ddb0b2eb3883f4261d768575b5d76656c1243d07534d05",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://64ca1545150c0daff520875901985b2bb4920c6fe91ae8115c9a811dbf3571c6",
-				"dweb:/ipfs/QmZwz9vrVLQMUGFd31ectkjgbs485RcLqG4imo2C83nZCE"
+				"bzz-raw://37ff6cd17d89be8e179bb779f56f040cc35e67653ed4920b35b543c68fdf4422",
+				"dweb:/ipfs/QmbZuujGVgNLK4QVP9V5rMS8uTbQ4UdK6Ap3bnY31yT6DQ"
 			]
 		}
 	},

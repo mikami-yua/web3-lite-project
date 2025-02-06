@@ -73,7 +73,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/delegatecall/unstructured-proxy.sol": "Proxy"
+			"contracts/delegatecall/base-proxy.sol": "Proxy"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -87,12 +87,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/delegatecall/unstructured-proxy.sol": {
-			"keccak256": "0xfd7e93d8975ca9839c38310884fac6a732ba0f85f7811f603c00d22dd8ab7265",
+		"contracts/delegatecall/base-proxy.sol": {
+			"keccak256": "0x0f11732d520e454aea91b0ee9d96a436c320a730a212ba4e57e5509dd3fdbfca",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ce9c31c48394eea7bc2d783462baefbf49d1573f7530cf36899a2343c9f0e772",
-				"dweb:/ipfs/QmQHDdC2SJAgxZeBc2wZG5jMoipLynv1RYHJ7uhzoftL2L"
+				"bzz-raw://64ca1545150c0daff520875901985b2bb4920c6fe91ae8115c9a811dbf3571c6",
+				"dweb:/ipfs/QmZwz9vrVLQMUGFd31ectkjgbs485RcLqG4imo2C83nZCE"
 			]
 		}
 	},
