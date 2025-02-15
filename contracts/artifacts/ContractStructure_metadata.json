@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -77,7 +77,7 @@
 		"compilationTarget": {
 			"contracts/1_ContractStruture.sol": "ContractStructure"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
