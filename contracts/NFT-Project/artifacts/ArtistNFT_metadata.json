@@ -11,6 +11,70 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "numerator",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "denominator",
+						"type": "uint256"
+					}
+				],
+				"name": "ERC2981InvalidDefaultRoyalty",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					}
+				],
+				"name": "ERC2981InvalidDefaultRoyaltyReceiver",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numerator",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "denominator",
+						"type": "uint256"
+					}
+				],
+				"name": "ERC2981InvalidTokenRoyalty",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					}
+				],
+				"name": "ERC2981InvalidTokenRoyaltyReceiver",
+				"type": "error"
+			},
+			{
 				"inputs": [],
 				"name": "ERC721EnumerableForbiddenBatchMint",
 				"type": "error"
@@ -380,6 +444,35 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "salePrice",
+						"type": "uint256"
+					}
+				],
+				"name": "royaltyInfo",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "from",
 						"type": "address"
@@ -579,6 +672,26 @@
 		],
 		"devdoc": {
 			"errors": {
+				"ERC2981InvalidDefaultRoyalty(uint256,uint256)": [
+					{
+						"details": "The default royalty set is invalid (eg. (numerator / denominator) >= 1)."
+					}
+				],
+				"ERC2981InvalidDefaultRoyaltyReceiver(address)": [
+					{
+						"details": "The default royalty receiver is invalid."
+					}
+				],
+				"ERC2981InvalidTokenRoyalty(uint256,uint256,uint256)": [
+					{
+						"details": "The royalty set for an specific `tokenId` is invalid (eg. (numerator / denominator) >= 1)."
+					}
+				],
+				"ERC2981InvalidTokenRoyaltyReceiver(uint256,address)": [
+					{
+						"details": "The royalty receiver for `tokenId` is invalid."
+					}
+				],
 				"ERC721EnumerableForbiddenBatchMint()": [
 					{
 						"details": "Batch mint is not allowed."
@@ -694,6 +807,9 @@
 				"ownerOf(uint256)": {
 					"details": "See {IERC721-ownerOf}."
 				},
+				"royaltyInfo(uint256,uint256)": {
+					"details": "Returns how much royalty is owed and to whom, based on a sale price that may be denominated in any unit of exchange. The royalty amount is denominated and should be paid in that same unit of exchange. NOTE: ERC-2981 allows setting the royalty to 100% of the price. In that case all the price would be sent to the royalty receiver and 0 tokens to the seller. Contracts dealing with royalty should consider empty transfers."
+				},
 				"safeTransferFrom(address,address,uint256)": {
 					"details": "See {IERC721-safeTransferFrom}."
 				},
@@ -749,6 +865,14 @@
 			"urls": [
 				"bzz-raw://11fea9f8bc98949ac6709f0c1699db7430d2948137aa94d5a9e95a91f61a710a",
 				"dweb:/ipfs/QmQdfRXxQjwP6yn3DVo1GHPpriKNcFghSPi94Z1oKEFUNS"
+			]
+		},
+		"@openzeppelin/contracts/interfaces/IERC2981.sol": {
+			"keccak256": "0x3b017a19c1730050d0fdff8dfa9255741634699aa4217442724746ca49e13292",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://05530a2959e8be01cd88993970924cd6081c3462395f6fc0e73c034519259b05",
+				"dweb:/ipfs/QmXAG8dF9fiYE8iVWJYWxmbEMNL6RvBAxzRGq2nyLanB2M"
 			]
 		},
 		"@openzeppelin/contracts/interfaces/IERC4906.sol": {
@@ -807,6 +931,14 @@
 				"dweb:/ipfs/QmNQ5xKxJpF9k7AahnmJYvg5XeGSYtRig2Lp2WHmWXyBze"
 			]
 		},
+		"@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol": {
+			"keccak256": "0x6931eb56297ef01d684f2b24b36f67949a8754ee753789d71b425be2dec8cf8b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9b67cd3c0f0dc7c3d8326321dbf9a80b92a85d0efe37d234d137d87e61af1fd0",
+				"dweb:/ipfs/Qmbh2jmGvFJECA4RkTiQDjAMsRcw7vJEgQBFRrA3BXC5ij"
+			]
+		},
 		"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
 			"keccak256": "0xe52813067c6d5838eeb34e1da8beb2514371a7d778266013b04ca3be1dda7100",
 			"license": "MIT",
@@ -837,6 +969,14 @@
 			"urls": [
 				"bzz-raw://746d295e403931aeb9d6065fd5a0871f43ab5459814a60623611e4b6641a09fd",
 				"dweb:/ipfs/QmWrgT8YJrQ9FfD1o3YYArwo57e7MGdpFKuM74qJ4qE34E"
+			]
+		},
+		"@openzeppelin/contracts/token/common/ERC2981.sol": {
+			"keccak256": "0x01818908219f73eecfbbe8999ac583ee3fcbfe8e39e8e0a823199737d0ed8052",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://674bafb0a373297befe1b5fe4f5a02cc18a305d8f9a4577deddc2030a611433e",
+				"dweb:/ipfs/QmPq5sBp1upRbBVdU5kd1VyG4tHAbv9z6V1NSPuPs8vAtd"
 			]
 		},
 		"@openzeppelin/contracts/utils/Context.sol": {
@@ -912,11 +1052,11 @@
 			]
 		},
 		"contracts/NFT-Project/ArtistNFT.sol": {
-			"keccak256": "0xe503c98166a6ac720ad1114291116c42c53ba84a47924a1041ddb963e849ab9c",
+			"keccak256": "0x323309f1c33759b3b33d67645c5a574bc18f9dd3f8962ee771848e0e796651b3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eba0f1ce68421a2f134642a6e70edf7b8353c45f41f5121e4b228f474f97d000",
-				"dweb:/ipfs/QmfG7kJF7BKEnebZ2CzXfS8FXErkQrvoj1GbLCufzoHttk"
+				"bzz-raw://86abe462edc1397d2fbaed8bd09e35e1307f6d7156aabb3360f5915740e09ae2",
+				"dweb:/ipfs/QmPdwbbKj4D2eCuYm4v5tw7vMUg4iEsEAmLt7HJ6yBZ26Q"
 			]
 		}
 	},

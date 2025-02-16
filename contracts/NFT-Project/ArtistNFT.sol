@@ -3,8 +3,9 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import  "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
-contract ArtistNFT is ERC721URIStorage, ERC721Enumerable {
+contract ArtistNFT is ERC721URIStorage, ERC721Enumerable,ERC721Royalty {
     using Counters for Counters.Counter;
 
     // 每次分配一个tokenid 铸造一个token
@@ -22,7 +23,7 @@ contract ArtistNFT is ERC721URIStorage, ERC721Enumerable {
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721URIStorage, ERC721Enumerable)
+        override(ERC721URIStorage, ERC721Enumerable,ERC721Royalty)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
